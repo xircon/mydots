@@ -1,0 +1,13 @@
+#!/bin/bash
+num2=1
+Str=`grep -i background_opacity alacritty.yml`
+Str=${Str:20:5}
+num=$(awk "BEGIN {print $Str+0.05; exit}")
+echo $num
+
+if (( $(echo "$num > 1" |bc -l) )); then
+	num=1 
+fi
+
+sed -i "/background_opacity:.*/c\background_opacity: $num" ~/.config/alacritty/alacritty.yml 
+touch ~/.config/alacritty/alacritty.yml

@@ -1,0 +1,678 @@
+#!/bin/bash
+# Set personal aliases overriding those provided by oh-my-zsh libs,
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+# Example aliases
+
+#espanso
+alias espcfg="e ~/.config/espanso/default.yml && espanso restart"
+alias runcfg="e /home/steve/dotfiles/run-or-raise/shortcuts.conf"
+
+# Postgresql:
+alias pgu="sudo -iu postgres"
+
+# systemctl
+alias sse="sudo systemctl enable --now "
+alias sss="sudo systemctl start "
+alias ssd="sudo systemctl disable "
+alias ssu="systemctl enable --user "
+
+#Desktops:
+alias d1="qdbus org.kde.KWin /KWin setCurrentDesktop 1"
+alias d2="qdbus org.kde.KWin /KWin setCurrentDesktop 2"
+alias d3="qdbus org.kde.KWin /KWin setCurrentDesktop 3"
+alias d4="qdbus org.kde.KWin /KWin setCurrentDesktop 4"
+
+# Terminal:
+alias acfg="e ~/.config/alacritty/alacritty.yml"
+alias op1="sed -i '/background_opacity:.*/c\background_opacity: 1.0' ~/.config/alacritty/alacritty.yml && touch ~/.config/alacritty/alacritty.yml"
+alias op75="sed -i '/background_opacity:.*/c\background_opacity: 0.75' ~/.config/alacritty/alacritty.yml && touch ~/.config/alacritty/alacritty.yml"
+
+opp() {
+ str="/background_opacity:.*/c\background_opacity:"
+ file="~/.config/alacritty/alacritty.yml"
+ sed -i "$str $1" ~/.config/alacritty/alacritty.yml && touch ~/.config/alacritty/alacritty.yml
+}
+
+alias sd="sudo"
+
+alias cat=bat
+alias i=imv
+alias vc=vim
+alias ecat="mm "
+alias hhh="htop"
+alias catp="bat --plain"
+alias zshconfig="mate ~/.zshrc"
+alias killx="setxkbmap -option terminate:ctrl_alt_bksp"
+alias blame="systemd-analyze blame"
+alias cx='chmod +x'
+alias fixc="killall cairo-dock && cairo-dock &"
+alias joerc="cd ~ && joe .joerc && cp -f .joerc ~/Dropbox/config_backup && sudo cp -f .joerc /root/.joerc"
+alias upf="trizen -Ss featherpad && trizen -S featherpad-git"
+
+#Search
+alias updb="uptime && time sudo updatedb&"
+alias updatedb="time sudo updatedb"
+#Locate:
+alias dloc="drill-search-cli"
+alias locate="locate -ie"
+alias loc="locate -ie"
+
+locg(){
+    locate -ie $1 | grep -i $2
+}
+
+le(){
+    tf=`locate $1 | fzf -e +s --reverse`
+    if [ "$tf" != "" ]; then
+   		 vim $tf
+    fi
+}
+
+alias myuser="echo 'sudo useradd -m -G wheel -s /bin/bash *username*'"
+
+alias spectre="dmesg | grep microcode  && sudo spectre-meltdown-checker"
+alias gpgrk="gpg --recv-key "
+#alias yup="date && time trizen -Syyua --noconfirm"
+alias qs="sudo pacman -Qs "
+alias dblck"sudo rm /var/lib/pacman/db.lck"
+alias qm="pacman -Qqm"
+alias yyy="trizen -Syyu && trizen -Sa"
+#alias syu="sudo pacman-mirrors -f20 && trizen -Syyua --noconfirm && trizen -Syyu --noconfirm"
+alias syu="/home/stevef/scripts/syu.sh"
+alias clean="pamac clean --keep 3"
+alias syuu="sudo pacman-mirrors -f5 && sudo pacman -Syyuu"
+alias mirrors="sudo reflector --verbose --latest 40 --sort rate --save /etc/pacman.d/mirrorlist"
+alias updates="sudo pacman -Qu"
+alias yup1="sudo pacman -Sy archlinux-keyring manjaro-keyring --noconfirm python2 | grep -i installed  && date && trizen -Syyua --noconfirm"
+
+alias yyp="sudo pacman -Ss "
+alias yyr="trizen -R"
+alias yyd="sudo pacman -Rdd"
+alias yrt="trizen"
+alias yys="trizen -Si "
+alias yyi="trizen -Qi "
+alias yync="trizen --m-arg "--skipchecksums" -S "
+#alias orp='sudo pacman -Rs $(pacman -Qqdt)'
+alias pinst="expac -Q \"%-33n   %d\" | fzf --reverse -m --header=\"TAB key to (un)select. ENTER key to remove. ESC to quit.\" --prompt='Enter string to filter list > ' | awk '{print $1}'"
+alias pacinf="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+alias ipkg="~/scripts/ipkg.sh"
+alias paclog="cat /var/log/pacman.log | grep -iE 'installed|upgraded' | fzf -e +s --reverse"
+
+alias dotf="printf '%s\n' .*(.)"
+
+# Browsers:
+alias vacff='find $HOME/.mozilla/ \( -name "*.sqlite" \) -exec sqlite3 {} "vacuum" \;'
+
+
+#Logout / Reboot etc
+#alias lo="killall evdoublebind && qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
+alias lonc="qdbus org.kde.ksmserver /KSMServer logout 0 3 3"
+
+lo() {
+    local DT=`pgrep -c gnome-shell`
+#    kill -9 `pidof emacs`
+   # if ((`pgrep -c emacs` == 0)); then
+        if [ "$DT" != "0" ]; then
+            killall evdbw
+            gnome-session-quit --no-prompt
+        else
+            killall evdoublebind
+            qdbus org.kde.ksmserver /KSMServer logout 1 3 3
+            cinnamon-session-quit --logout --force
+        fi
+    #else
+    #     echo "YES"
+    #     zenity --warning --text "Close emacs first!!!"
+    #fi
+}
+
+
+
+#btrfs
+alias snapit='cd / && sudo btrfs subvolume snapshot / /snapshots/@`date +"%Y%m%d-%H:%M"` && sudo update-grub'
+alias snapls='sudo btrfs subvolume list -a /'
+alias defragr='sudo btrfs filesystem defragment -r /'
+alias defragh='sudo btrfs filesystem defragment -r /home'
+alias defragv='sudo btrfs filesystem defragment -r /var'
+
+# Keboard related
+alias xevk="xev -event keyboard"
+
+#Bookmark Directory system:
+alias bmm='echo `pwd`'
+bm() {
+    echo $(pwd)
+}
+
+cbm() {
+    dir=$(cat ~/.my_bookmarks | fzf --reverse -e +s)
+    cd $dir
+}
+
+# Buku
+alias add="buku -a "
+alias imp="buku -i ~/bookmarks.html"
+alias b="buku --suggest"
+
+fb() {
+    # save newline separated string into an array
+    #zmodload zsh/mapfile    
+    Flines=$mapfile[website] <<< "$(buku -p -f 5 | column -ts$'\t' | fzf --multi)"
+    echo $mapfile
+    
+    # open each website
+    for i in "${website[@]}"; do
+        index="$(echo "$i" | awk '{print $1}')"
+        echo TT$index
+        buku -p "$index"
+        buku -o "$index"
+    done
+}
+
+#Interactive cd
+alias rr="ranger"
+alias cdr='ranger --show-only-dirs --choosedir=/tmp/.dir && $(cat /tmp/.dir)'
+alias wall='ranger ~/wallpaper'
+
+alias zshc="cd ~ && e .zshrc && unalias -m '*' && source ~/.zshrc"
+alias ee='emacs $*' 
+
+aliases(){
+    emacsclient -c ~/.aliasesrc&
+    #unalias -m '*'
+    source ~/.aliasesrc
+}
+
+alias reboot="~/scripts/reboot.sh"
+alias rb="~/scripts/reboot.sh"
+
+alias vv="imv"
+alias xv="xviewer"
+alias netup="sudo systemctl restart NetworkManager && killall nm-applet && sleep 5 && nm-applet&"
+alias netstat='hwinfo --netcard --wlan --bluetooth | grep -Ei "model\:|driver\:|status\:|cmd\:|file:|detected\:" | grep -v "Config Status" '
+alias killl="killall"
+alias hs="history | grep "
+alias ag="ag --hidden "
+alias lal="cd ~ && cat .zshrc | grep alias"
+alias py2="python2"
+alias py="python"
+alias wxfb=" GTK2_RC_FILES=/usr/share/themes/Yaru-Grey/gtk-2.0/gtkrc wxformbuilder"
+alias pmm="sudo pacman-mirrors -f"
+
+#╔══════╗
+#║ Aura ║
+#╚══════╝
+alias dgrade="sudo aura -C "
+alias incache="aura -Cs "
+alias explicit="sudo aura -Oa "
+alias orp="sudo aura -Oj"
+alias query="aura -Qi "
+alias list-pkgs="aura -Q "
+alias owns="aura -Qo "
+alias cmds="cat ~/.aliasesrc  | grep -i  aura"
+alias sup="sudo aura -Syu && sudo aura -Auax"
+alias aurup="sudo aura -Auax --devel --noconfirm"
+
+alias spac="sudo pacman -Syyu"
+alias updev="trizen -Syyua --devel -q --needed --noconfirm"
+alias movies="cd /home/media/Movies/"
+
+alias rm0b="find -name 'file*' -size 0 -delete"
+
+alias birth="stat / | grep Birth"
+
+#Suspend Lid Switch
+alias sp-="systemd-inhibit --what=handle-lid-switch sleep 2592000 &"
+alias sp+="killall systemd-inhibit"
+
+#Sound
+alias boost+="pactl -- set-sink-volume 1 150%"
+alias boost-="pactl -- set-sink-volume 1 50%"
+
+#Tmux
+alias xx="exit"
+alias tks="tmux kill-server"
+
+#Directory & File
+alias ..="cd .."
+alias app="cd ~/scripts/appjar"
+alias cdg="cd ~/git"
+alias cdy="/home/steve/.config/yadm/repo.git"
+alias giton="git config --global oh-my-zsh.hide-status 0"
+alias gitoff="git config --global oh-my-zsh.hide-status 1"
+alias ldir="ls -ld -- */"
+alias ls="ls --color=always"
+alias lh="ls -lah"
+alias l1="ls -1"
+alias iotop="sudo iotop"
+alias md="mkdir"
+
+# yadm
+alias myyadm='yadm commit -am "`date`" && yadm push -u origin master'
+
+# Configuration aliases:
+alias paccfg="se /etc/pacman.conf"
+alias grubcfg="se /etc/default/grub"
+alias microcfg="e settings.json bindings.json1"
+
+alias cleanc="sudo  paccache -rk 3 && paccache -ruk0"
+alias rmcoredmp="sudo rm -r /var/lib/systemd/coredump/*"
+alias roku="roku 192.168.0.7"
+alias nsp="xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 0"
+alias sp="xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 1"
+alias dot="cd ~/dotfiles"
+alias dotbak="zip -r "/dotfiles/archive-$(date +"%Y-%m-%d-%T").zip" ~/dotfiles/"
+alias ext="cd ~/.local/share/gnome-shell/extensions"
+alias apps="cd /usr/share/applications"
+alias bin="cd /usr/bin"
+alias icons="cd /usr/share/icons"
+alias so="source ~/.aliasesrc"
+#lsd() {
+#   ls -al|awk '{ print $1 " " $9 }'|grep ^d | awk '{ print $2 }'
+#}
+#Directory Shortcuts:
+alias lsda="lsd -la"
+alias la="exa -lah"
+alias lsdl="lsd -la"
+alias l="exa -lah --time-style=long-iso"
+alias home="~"
+alias ~="cd ~/"
+alias dl="cd ~/Downloads"
+alias conf="cd ~/.config"
+alias drpb="cd ~/Dropbox"
+alias media="cd /home/media/"
+alias sc="cd ~/scripts"
+alias .em="cd ~/.emacs.d"
+alias memw='while true; do echo -n "`date +%H:%M:%S` " ;psmem  | grep -i  "emacs-"; sleep 10; done'
+alias emmm='while true; do echo -n "`date +%H:%M:%S` " ;psmem  | grep -i  "emacs-"; sleep 10; done'
+alias pkgs="cd /var/cache/pacman/pkg/"
+alias calendar=' vim -c "Calendar"'
+
+### xcape:
+alias pxce="/home/steve/.config/autostart-scripts/plasma-xcape.sh"
+alias space='xcape -e "Hyper_L=space"'
+alias ud+="sudo systemctl start udevmon"
+alias ud++="ud- && sleep 2 && ud+ && systemctl status udevmon"
+alias ud-="sudo systemctl stop udevmon"
+
+rkbd () {
+    killall xcape || true
+    setxkbmap -layout gb
+}
+
+alias cxc="/home/steve/.config/bspwm/xcape/cinnamon-xcape.sh"
+#Memory:
+alias psmem="sudo ps_mem"
+alias psg="ps aux | grep "
+alias psl='watch -n0.5 "ps -e --sort -pcpu -o pid,pcpu,comm"'
+
+# psg () {
+#     cmd='ps aux | grep $1 | grep -v "sqlite|grep|psg"'
+#     #command="ps aux | grep $1 "
+#     `${cmd[@]}`
+# }
+
+alias search=searchfunction
+alias weather="curl -s wttr.in/sheffield"
+alias wwws+="twistd3 web --path ."
+alias ipw='http://192.168.0.37:8080/'
+alias wwws-="kill \`cat twistd.pid\`"
+alias lc='colorls'
+#i3
+#alias i3c="featherpad ~/.i3/config &"
+#e3 alias="~/.i3/e3.sh"
+
+#bspwm
+alias kb="killall bspwm"
+alias bsp="cd ~/.config/bspwm"
+alias bcfg="bsp && mm bspwmrc mybspwm.sh ~/.config/sxhkd/sxhkdrc"
+alias bspcfg="bsp && mm bspwmrc mybspwm.sh ~/.config/sxhkd/sxhkdrc"
+alias sxx="e ~/.config/sxhkd/sxhkdrc"
+
+
+#alias e3="cd ~/.i3 && joe ~/.i3/config.conf && i3bang config.conf && cp config.conf "backup/config.backup.$(date +%F_%R_%S)"&&i3-msg reload && gitup && cd ~/.i3"
+alias caps="setxkbmap -option"
+alias nocaps="setxkbmap -option caps:none"
+alias gitup="cd ~/dotfiles && git push --all -u origin && git add * && git commit -a -m 'This is a commit' && git push --all -u origin"
+
+#cool :D
+alias map="telnet mapscii\.me"
+alias g="googler "
+alias wgetp="wgetpaste -c gists "
+#alias wk="wikicurses"
+alias sshw="imv -r `pwd`"
+
+wk(){
+    str="'$*'"
+    #echo $str    
+    wikicurses $str    
+}
+
+# gcalcli
+alias a="gcalcli agenda"
+alias a2="gcalcli calw 2"
+alias a1="gcalcli calw 1"
+
+#openbox
+alias ob="cd ~/.config/openbox && e autostart"
+
+#kernel
+alias modload="sudo /usr/lib/systemd/systemd-modules-load"
+alias status="sudo systemctl status "
+#Screen
+alias scr="xrandr --size 1600x900"
+
+# Editor & Notes
+#alias j="joe"
+alias sj="sudo joe"
+alias fp="featherpad "
+alias sfp="sudo featherpad "
+alias notes="clear && sncli sync && sncli"
+#alias e="jed "
+alias ee='emac ~/.t.org'
+alias prelude="emacs --with-profile prelude &"
+alias doom="emacs --with-profile doom&"
+alias se="micro "
+alias mm="micro "
+
+#alias e="emacs"
+
+#if [[ ${str:0:1} == "/" ]] ; then echo 1; else echo 0; fi
+
+## emacs function:
+e(){
+    sudo="/sudo::"
+    
+    if [[ ${1:0:1} == "/" ]] ; then
+        str=$sudo$1
+    else
+        str=$1
+    fi
+
+    if [[ ${1:0:5} == "/home" ]] ; then
+    	str=$1
+    fi
+
+    if [ "$1" = "" ]; then
+       #Open my notes file:
+       emacsclient -c ~/.t.org &
+    else
+       #Open file from command line:
+       emacsclient -c $str &
+    fi
+    echo "Opening: "$str
+}
+
+alias et= "emacs ~/dotfiles/emacs.d/config-term.org"
+alias tmc="emacs ~/.tmux.conf"
+alias tml="emacs ~/.tmux.conf.local"
+
+alias v="vim"
+alias me="micro"
+alias rme="systemctl --user emacs restart"
+alias jedrc="jed .jedrc"
+# Emacs
+alias edir="cd ~/.emacs.d"
+alias emt="emacs -nw --no-init-file -q"
+alias emc="emacs&"
+alias rstrt="systemctl stop --user emacs && time systemctl restart --user emacs"
+alias te="emacs -Q -nw"
+#alias emacs="emacs &> /dev/null"
+
+# LeftWM
+alias rw="feh --recursive --randomize --bg-fill ~/wallpaper"
+alias lcfg="cd ~/.config/leftwm/ && e ~/.config/leftwm/config.toml"
+alias cdl="cd ~/.config/leftwm/"
+alias keys="cat ~/.config/leftwm/keys"
+
+#Herbs:
+alias herbs="cd ~/.config/herbstluftwm/ && mm autostart herbs.sh"
+alias hc='herbstclient'
+
+#Qtile:
+alias qt="cd ~/.config/qtile"
+
+#Quake
+alias qkbd="killall xcape && xcape -e "Hyper_L=space" &"
+alias ev="evdoublebind /dev/input/event4 &"
+alias evw="killall evdbw 2>&1 && evdbw /dev/input/event4 &"
+alias kev="killall evdoublebind"
+alias nightmare="rkbd && cd /home/steve/.yq2/nightmare && yamagi-quake2 +set game nightmare +map nightmare"
+alias satyr="rkbd && cd /home/steve/.yq2/nightmare && yamagi-quake2 +set game alk14 +map alk14"
+alias amari="rkbd && cd /home/steve/.yq2/nightmare && yamagi-quake2 +set game amari +map amari"
+alias nailbmb="yamagi-quake2 +set game nailbomb +map nail1"
+
+## Prompt:
+alias prom="PS1=$(spaceship_prompt)"
+#alias prom-="PS1 export=~>"
+
+#URLS:
+alias rl="xdg-open https://www.bbc.co.uk/sport/rugby-league"
+
+
+#Sky Remote:
+#play
+alias pp="sky-remote-cli 192.168.0.38 play"
+#pause
+alias p="sky-remote-cli 192.168.0.38 pause"
+#alias pse="sky-remote-cli 192.168.0.38 pause"
+#TV Guide
+alias tvguide="sky-remote-cli 192.168.0.38 tvguide"
+#Fast forward
+alias f1="sky-remote-cli 192.168.0.38 fastforward"
+alias f="sky-remote-cli 192.168.0.38 fastforward fastforward fastforward fastforward"
+#Rewind
+alias r1="sky-remote-cli 192.168.0.38 rewind"
+alias r4="sky-remote-cli 192.168.0.38 rewind rewind rewind rewind"
+#Channel
+alias s="sky-remote-cli 192.168.0.38 "
+alias streamcr="/home/steve/git/stream2chromecast/stream2chromecast.py "
+#List installed
+yyl () { trizen $* | grep installed }
+locg () { locate $1 | grep $2 }
+catg () { cat $1 | grep $2 }
+catb () {cat `which $1` | fzf --reverse; echo `which $1` }
+catf () {cat $1 | fzf -e -i --reverse}
+fcat () {cat $1 | fzf -e -i --reverse}
+myfinder () {find $1 -iname "*$2*" 2>&1 -exec ls -sh {} \; | grep -v "Permission denied"}
+
+
+## Locale
+alias localepurge="sudo /usr/bin/localepurge-config && sudo localepurge ##<<this one"
+
+       ## Plasma
+       alias killp="killall plasmashell && plasmashell &"
+
+       alias yyup='sudo \yyup'
+
+       alias gest="libinput-gestures-setup restart"
+
+       yupf ()
+       { yup
+         echo "$b######################$n"
+         echo "$b# Cleaning cache.....#$n"
+         echo "$b######################$n"
+         sudo paccache -rk3
+         sudo paccache -ruk0
+         sudo /usr/bin/localepurge-config
+         echo "$b#######################$n"
+         echo "$b#Purging unused locals#$n"
+         echo "$b#######################$n"
+         echo $lf
+         localepurge
+         echo "$b##################$n"
+         echo "$b# Finished...... #$n"
+         echo "$b##################$n"
+       }
+
+       yup ()
+       {
+           date
+           b="\e[1m\e[31m" # Red
+           n="\e[39m"        # Back to normal
+           r="\e[1m\e[34m"   # Blue
+           lf="\n"           # line feed
+           d1=`date`
+
+           sudo tstoggle
+
+           echo -n "Update mirrors? "
+
+           read ytemp
+
+           case $ytemp in
+               "y")
+                   sudo pacman-mirrors --fasttrack 5
+                   ;;
+               *)
+                   ;;
+           esac
+
+           echo "$r################################################################$n"
+           cat /etc/pacman.d/mirrorlist  | grep Server | head -n1
+           echo "$r################################################################$n"
+           echo ""
+           echo "$b#######################"
+           echo "$b# Updating system.....#"
+           echo "$b#######################$n"
+           time trizen -Syyu --noconfirm --needed
+           #time trizen -Syyua --noconfirm --needed --noedit
+           echo "Start  $d1"
+           echo "Finish `date`"
+           sudo updatedb &
+           echo .
+           echo .
+           FF=$(pgrep -c firefox)
+           if [ $FF -eq "0" ]; then
+               echo "Vacuuming Firefox DB"
+               vacff &
+           fi
+           needrestart &
+       }
+       alias mucd="cd ~/.config/jed"
+
+       mycfg ()
+       {
+           local temp
+           #echo "\e[31m"
+           echo "\e[31m"
+           echo "Configuration Editor" | boxes -d shell
+           echo "\e[39m\e[49m"
+           #\e[0m"
+           echo "1>. Micro - Edit Settings"
+           echo "2>. Micro - Edit Key Bindings"
+           echo "3>. Micro - Edit Colour Scheme"
+           echo "4>. Github page"
+           echo "5>. Compton.conf"
+           echo "6>. Termite.conf"
+           echo "7>. Grub"
+           read temp
+           case $temp in
+               1)
+                   cd ~/.config/micro
+                   micro settings.json ;;
+               2)
+                   cd ~/.config/micro
+                   micro bindings.json ;;
+
+               3)
+                   cd ~/.config/micro
+                   micro colorschemes/my-simple.micro ;;
+
+               4)
+                   firefox https://github.com/zyedidia/micro ;;
+               5)
+                   mu ~/.config/bspwm/compton/compton.conf ;;
+
+               6)
+                   mu ~/.config/termite/config ;;
+               7)
+                   se /etc/default/grub
+           esac
+
+       }
+
+
+       swapb ()
+       {
+           local temp
+           MY_BROWSER="~/scripts/browser.sh"
+           echo "\e[31m"
+           echo " Swap Browser" | boxes -d shell
+           echo "\e[39m\e[49m"
+           echo "1>. Vivaldi"
+           echo "2>. Firefox Nightly"
+           echo "3>. Firefox"
+           echo "4>. Google Chrome"
+           read temp
+
+           case $temp in
+               1)
+                   cp ~/scripts/vivaldi.sh ~/scripts/browser.sh ;;
+
+               2)
+                   cp ~/scripts/firefox-beta.sh ~/scripts/browser.sh ;;
+
+               3)
+                   cp ~/scripts/firefox.sh ~/scripts/browser.sh ;;
+
+               4)
+                   cp ~/scripts/google-chrom.sh ~/scripts/browser.sh ;;
+
+           esac
+       }
+
+       rustp () { cargo new $1 --bin && cd $1 }
+
+alias wallp='cd ~/wallpaper'
+
+#alias myip="echo 'Wireless:' && localip && echo -n 'ipv6: ' && curl v6.ifconfig.co && echo -n 'ipv4: ' && curl -4 v4.ifconfig.co"
+alias myip="~/scripts/myip.sh"
+localip(){
+   dev=`iw dev | grep Interface |  awk '{print $2}'`
+   ip=`ip addr show $dev | grep 'inet ' |  awk '{print $2}' | cut -f1 -d'/'`
+  echo $dev: $ip
+}
+
+alias cfg='cd ~/.config'
+alias auto='cd ~/.config/autostart/'
+alias pics='cd ~/Pictures'
+alias cclip='xclip -selection clipboard'
+alias fclip="greenclip print | sed '/^$/d' | fzf -e | xargs -r -d'\n' -I '{}' greenclip print '{}'"
+alias cls='clear'
+alias xckill='killall xcape'
+alias devel='trizen -Syyua --devel --needed --noconfirm'
+alias bspconk='cd ~/.config/bspwm/conky'
+alias xxx='xmodmap .Xmodmap && sleep 5 && xcape -e "Hyper_L=space"'
+alias xr='xrdb ~/.Xresources'
+alias inxif="inxi --full -v 8"
+alias inxi="inxi -Fxxxaz -c0 --no-host"
+alias inxic="inxi -Fxxxz"
+## Docker
+alias stop="sudo docker stop emacs"
+alias start="xhost +si:localuser:steve && sudo docker start emacs"
+
+alias az+="killall running.bin || true && wg-quick up azirevpn-uk1 || true && running.bin &> /dev/null&"
+alias az-="killall running.bin || true && wg-quick down azirevpn-uk1 || true && running.bin &> /dev/null&"
+alias netstart="sudo systemctl restart connman"
+
+alias rm="trash-put"
+
+trash () {
+   echo "trash-put           trash files and directories."
+   echo "trash-empty         empty the trashcan(s)."
+   echo "trash-list          list trashed files."
+   echo "trash-restore       restore a trashed file."
+   echo "trash-rm            remove individual files from the trashcan."
+}
+
+dt () {
+   e `printf '%s\n' .*(.) | fzf --reverse`
+       }
+
+#Test
+function cdd() {
+    cd $1
+    echo $(pwd) >> ~/.dirhistory 
+}

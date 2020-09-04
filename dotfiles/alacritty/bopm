@@ -1,0 +1,14 @@
+#!/bin/bash
+Str=`grep -i background_opacity ~/.config/alacritty/alacritty.yml`
+Str=${Str:20:5}
+
+num=$(awk "BEGIN {print $Str-0.1; exit}")
+
+echo $num #debug
+
+if (( $(echo "$num < 0" |bc -l) )); then 
+	num=0.0 
+fi
+
+sed -i "/background_opacity:.*/c\background_opacity: $num" ~/.config/alacritty/alacritty.yml 
+touch ~/.config/alacritty/alacritty.yml
