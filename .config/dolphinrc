@@ -19,8 +19,8 @@ FontWeight=50
 IconSize=64
 
 [KPropertiesDialog]
-Height 900=586
-Width 1600=503
+Height 900=657
+Width 1600=638
 
 [MainWindow]
 Height 480=450
@@ -35,7 +35,7 @@ ToolButtonStyle=IconOnly
 
 [Open-with settings]
 CompletionMode=1
-History=mpv
+History=feat,mpv
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
