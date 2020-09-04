@@ -1,0 +1,19 @@
+[Appearance]
+Skin=velours-yakuake
+SkinInstalledWithKns=true
+
+[Desktop Entry]
+DefaultProfile=
+
+[Dialogs]
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 900=550
+Width 1600=700
+
+[Favorite Profiles]
+Favorites=
+
+[Window]
+Height=80

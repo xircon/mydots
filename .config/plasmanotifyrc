@@ -1,0 +1,12 @@
+[Applications][discord]
+Seen=true
+
+[Applications][firefox]
+Seen=true
+
+[Applications][vivaldi-stable]
+Seen=true
+
+[Notifications]
+LowPriorityHistory=true
+PopupPosition=BottomRight

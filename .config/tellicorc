@@ -1,0 +1,51 @@
+[EditImage]
+editor=Gwenview
+
+[Fetch Dialog Options]
+Height 900=666
+Search Key=1
+Search Source=The Movie DB (TMDb)
+Splitter Sizes=159,224
+Width 1600=920
+
+[General Options]
+Enable Webcam=false
+Image Location=ImagesInLocalDir
+Last Open File=file:///home/stevef/Documents/Documents/Films.tc
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[KFileDialog Settings]
+Recent Files[$e]=Films.tc,file:$HOME/Documents/Documents/Films.tc
+Recent URLs[$e]=file:$HOME/Documents/Documents/
+detailViewIconSize=0
+
+[Main Window Options]
+Central Dock State=\x00\x00\x00\xff\x00\x00\x00\x00\xfd\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x050\x00\x00\x00\xfa\xfc\x01\x00\x00\x00\x01\xfb\x00\x00\x00\x1e\x00c\x00o\x00l\x00l\x00e\x00c\x00t\x00i\x00o\x00n\x00_\x00d\x00o\x00c\x00k\x01\x00\x00\x00\x00\x00\x00\x050\x00\x00\x00T\x00\xff\xff\xff\x00\x00\x050\x00\x00\x01\xe6\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x08\xfc\x00\x00\x00\x00
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAEMAAAC5PwCAAAAAfsAAAAUAGcAcgBvAHUAcABfAGQAbwBjAGsBAAAAXgAAAuQAAACaAP///wAABTAAAALkAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBjAG8AbABsAGUAYwB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAACGP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+Window-Maximized 900x1600=true
+
+[Notification Messages]
+DeleteEntry=false
+
+[Options - video]
+ColumnNames=title
+ColumnOrder=0
+ColumnWidths=1326
+Group By=genre
+Prev2SortColumn=-1
+PrevSortColumn=-1
+SortColumn=0
+SortOrder=1
+
+[Recent Dirs]
+open[$e]=$HOME/Documents/Documents,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Documents/Documents/Films.tc
+Name1[$e]=Films.tc
+
+[TipOfDay]
+RunOnStart=false

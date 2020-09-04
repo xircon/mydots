@@ -1,0 +1,17 @@
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAGDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+splitterSizes=424,212
+
+[Recent Files]
+File1[$e]=$HOME/.emacs.d/FiraCode-Regular-Symbol.zip
+File2[$e]=$HOME/Downloads/Stockfish-NNUE.7z
+Name1[$e]=FiraCode-Regular-Symbol.zip
+Name2[$e]=Stockfish-NNUE.7z
+
+[Viewer]
+Height 900=338
+State=AAAA/wAAAAD9AAAAAAAAAYkAAAD0AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1600=393

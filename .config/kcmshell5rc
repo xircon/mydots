@@ -1,0 +1,7 @@
+[KFileDialog Settings]
+Recent Files[$e]=AzireVPN-uk1.ovpn,file:$HOME/Downloads/vpn/AzireVPN-us1.ovpn,file:$HOME/Downloads/vpn/AzireVPN-uk1.ovpn
+Recent URLs[$e]=file:$HOME/Downloads/vpn/
+detailViewIconSize=0
+
+[Notification Messages]
+copyCertificatesDialog=true

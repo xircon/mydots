@@ -1,0 +1,51 @@
+[DownloadDialog Settings]
+Height 900=550
+Width 1600=700
+
+[KFileDialog Settings]
+Recent Files[$e]=bamboo.jpg,file:$HOME/Downloads/Pictures/space-shuttle-icon-340529.png,file:$HOME/Downloads/shuttle.jpg,file:$HOME/Downloads/eos.png,file:$HOME/wallpaper/bamboo.jpg
+Recent URLs[$e]=file:$HOME/Downloads/Pictures/
+detailViewIconSize=0
+
+[KPropertiesDialog]
+Height 900=586
+Width 1600=540
+
+[PlasmaTransientsConfig]
+PreloadWeight=0
+
+[PlasmaViews][Panel 2]
+alignment=2
+panelVisibility=2
+
+[PlasmaViews][Panel 2][Defaults]
+minLength=468
+thickness=28
+
+[PlasmaViews][Panel 2][Horizontal1600]
+minLength=468
+thickness=28
+
+[PlasmaViews][Panel 2][Vertical900]
+thickness=36
+
+[PlasmaViews][Panel 24]
+panelVisibility=1
+
+[PlasmaViews][Panel 24][Defaults]
+maxLength=76
+minLength=76
+offset=5
+thickness=48
+
+[PlasmaViews][Panel 24][Horizontal1600]
+maxLength=76
+minLength=76
+offset=5
+thickness=48
+
+[ScreenConnectors]
+0=eDP1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js

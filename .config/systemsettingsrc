@@ -1,0 +1,20 @@
+[DownloadDialog Settings]
+Height 900=514
+Width 1600=700
+
+[KFileDialog Settings]
+Recent Files[$e]=screenlock.sh,file:$HOME/Pictures/ap.jpg,file:$HOME/scripts/screenlock.sh
+Recent URLs[$e]=file:$HOME/Pictures/
+detailViewIconSize=0
+
+[MainWindow]
+Height 900=700
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABkAAAANqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1600=1024
+Window-Maximized 900x1600=true
+
+[Open-with settings]
+CompletionMode=1
+History=lead,yak,cop,plasmashell,var,cai,plank

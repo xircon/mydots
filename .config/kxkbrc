@@ -1,0 +1,13 @@
+[Layout]
+DisplayNames=
+LayoutList=gb
+LayoutLoopCount=-1
+Model=pc86
+Options=terminate:ctrl_alt_bksp
+ResetOldOptions=true
+ShowFlag=false
+ShowLabel=true
+ShowLayoutIndicator=true
+ShowSingle=false
+SwitchMode=Global
+Use=true

@@ -1,0 +1,6 @@
+[Plugins]
+blurEnabled=true
+
+[org.kde.kdecoration2]
+library=org.ukui.kwin.aurorae
+theme=__aurorae__svg__Ukui-classic-dark
