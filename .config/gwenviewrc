@@ -1,31 +1,35 @@
 [$Version]
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/uss.png,file:$HOME/Downloads/uss.png
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=0
+
 [MainWindow]
 Height 900=480
-State=AAAA/wAAAAD9AAAAAAAAAyEAAAGDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABkAAAAMNAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1600=801
+Window-Maximized 900x1600=true
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/torrent/The Damned [Discography]/1977 - Damned Damned Damned (320)/Damned_-_Damned_damned_damned_album_cover.jpg
-File2[$e]=$HOME/Downloads/torrent/The Damned [Discography]/1977 - Music For Pleasure (320)/Damned_music_for_pleasure.jpg
-File3[$e]=$HOME/Documents/Documents/Films_files/a114d534115636600b6a89574844adfb.jpeg
-File4[$e]=$HOME/Documents/Documents/Films_files/2fb81192cd10fea4af3139c41cdb2b3a.jpeg
-File5[$e]=$HOME/Documents/Documents/Films_files/32d2e205713a5b1634e02e30129fea48.jpeg
-File6[$e]=$HOME/Documents/Documents/Films_files/fda4d585137629623c3602267536438c.jpeg
-File7[$e]=$HOME/Downloads/flog.gif
-File8[$e]=trash:/0-1 (13).jpg
-File9[$e]=trash:/0-2-4.jpg
-Name1[$e]=Damned_-_Damned_damned_damned_album_cover.jpg
-Name2[$e]=Damned_music_for_pleasure.jpg
-Name3[$e]=a114d534115636600b6a89574844adfb.jpeg
-Name4[$e]=2fb81192cd10fea4af3139c41cdb2b3a.jpeg
-Name5[$e]=32d2e205713a5b1634e02e30129fea48.jpeg
-Name6[$e]=fda4d585137629623c3602267536438c.jpeg
-Name7[$e]=flog.gif
-Name8[$e]=0-1 (13).jpg
-Name9[$e]=0-2-4.jpg
+File1[$e]=$HOME/Documents/Documents/Films_files/a114d534115636600b6a89574844adfb.jpeg
+File2[$e]=$HOME/Documents/Documents/Films_files/2fb81192cd10fea4af3139c41cdb2b3a.jpeg
+File3[$e]=$HOME/Documents/Documents/Films_files/32d2e205713a5b1634e02e30129fea48.jpeg
+File4[$e]=$HOME/Documents/Documents/Films_files/fda4d585137629623c3602267536438c.jpeg
+File5[$e]=$HOME/Downloads/flog.gif
+File6[$e]=trash:/0-1 (13).jpg
+File7[$e]=trash:/0-2-4.jpg
+File8[$e]=$HOME/Downloads/uss-e.jpeg
+Name1[$e]=a114d534115636600b6a89574844adfb.jpeg
+Name2[$e]=2fb81192cd10fea4af3139c41cdb2b3a.jpeg
+Name3[$e]=32d2e205713a5b1634e02e30129fea48.jpeg
+Name4[$e]=fda4d585137629623c3602267536438c.jpeg
+Name5[$e]=flog.gif
+Name6[$e]=0-1 (13).jpg
+Name7[$e]=0-2-4.jpg
+Name8[$e]=uss-e.jpeg
 
 [SideBar]
-SideBarSplitterSizes=179,616
+SideBarSplitterSizes=179,1415
