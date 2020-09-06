@@ -106,8 +106,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [DirSelect Dialog]
-DirSelectDialog Size=842,605
-History Items[$e]=file:$HOME/wallpaper,file:///opt,file:$HOME/pCloudDrive,file:$HOME/.cache,file:///home/media
+DirSelectDialog Size=879,617
+History Items[$e]=file:///home/media/music,file:$HOME/wallpaper,file:///opt,file:$HOME/pCloudDrive,file:$HOME/.cache,file:///home/media
 
 [General]
 BrowserApplication=vivaldi-stable.desktop
