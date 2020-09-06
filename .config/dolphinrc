@@ -19,13 +19,13 @@ FontWeight=50
 IconSize=64
 
 [KPropertiesDialog]
-Height 900=657
-Width 1600=638
+Height 900=586
+Width 1600=478
 
 [MainWindow]
 Height 480=450
 Height 900=688
-State=AAAA/wAAAAD9AAAAAwAAAAAAAAEBAAACivwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAmAAACigAAAFQA////AAAAAQAAALgAAAH0/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAAAAAH0AAAAAgD///8AAAADAAAD5gAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAABCAAAD5gAAAAIA////AAADnQAAAooAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAwAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAEBAAACivwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAmAAACigAAAFQA////AAAAAQAAALgAAAH0/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAAAAAH0AAAAAgD///8AAAADAAAEogAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAABCAAAEogAAAJcA////AAADnQAAAooAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAwAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1600=1252
 Width 640=632
@@ -35,7 +35,7 @@ ToolButtonStyle=IconOnly
 
 [Open-with settings]
 CompletionMode=1
-History=feat,mpv
+History=ark,feat,mpv
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
