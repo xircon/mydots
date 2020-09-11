@@ -10,11 +10,10 @@ detailViewIconSize=0
 [MainWindow]
 Height 900=700
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABkAAAANqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABAAAAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1600=1024
-Window-Maximized 900x1600=true
 
 [Open-with settings]
 CompletionMode=1
-History=lead,yak,cop,plasmashell,var,cai,plank
+History=conn,lead,yak,cop,plasmashell,var,cai,plank
