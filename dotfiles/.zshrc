@@ -14,6 +14,7 @@ VISUAL=micro
 export "VISUAL_EDITOR"=micro
 export EDITOR
 #export XDG_CONFIG_HOME=/path/to/nowhere
+export PATH=$PATH:$HOME/.local/bin
 
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
 # ctrl+shift+left/right

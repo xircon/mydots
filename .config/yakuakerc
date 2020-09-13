@@ -3,7 +3,7 @@ Skin=velours-yakuake
 SkinInstalledWithKns=true
 
 [Desktop Entry]
-DefaultProfile=
+DefaultProfile=Profile 2.profile
 
 [Dialogs]
 FirstRun=false
