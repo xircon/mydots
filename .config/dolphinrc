@@ -42,7 +42,7 @@ Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cur
 
 [SettingsDialog]
 Height 900=626
-Width 1600=728
+Width 1600=753
 
 [ViewPropertiesDialog]
 Height 900=403

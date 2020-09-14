@@ -1,4 +1,5 @@
 steve
+lxqt-panel | lxqt-panel
 albert | albert
 xscreensaver | xscreensaver
 deadd-notification-center | deadd-notification-center
@@ -6,7 +7,6 @@ indicator-kdeconnect | indicator-kdeconnect
 picom | picom
 syncclip | syncclip
 variety | variety
-nm-applet | nm-applet
 autokey-gtk | autokey-gtk
 pnmixer | pnmixer
 lxpolkit | lxpolkit
