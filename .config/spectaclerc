@@ -3,6 +3,4 @@ update_info=spectacle_newConfig.upd:spectacle-new-config
 
 [GuiConfig]
 captureDelay=15
-captureMode=2
-onClickChecked=true
-window-position=160,0
+window-position=307,237

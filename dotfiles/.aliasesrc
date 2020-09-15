@@ -360,6 +360,7 @@ alias ob="cd ~/.config/openbox && e autostart"
 #kernel
 alias modload="sudo /usr/lib/systemd/systemd-modules-load"
 alias status="sudo systemctl status "
+alias restart="sudo systemctl restart "
 #Screen
 alias scr="xrandr --size 1600x900"
 
