@@ -253,7 +253,7 @@ alias myyadm='yadm commit -am "`date`" && yadm push -u origin master'
 
 # Configuration aliases:
 alias paccfg="se /etc/pacman.conf"
-alias grubcfg="se /etc/default/grub"
+alias grubcfg="se /etc/default/grub && sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias microcfg="e settings.json bindings.json1"
 
 alias cleanc="sudo  paccache -rk 3 && paccache -ruk0"

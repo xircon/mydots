@@ -29,6 +29,10 @@ State=AAAA/wAAAAD9AAAAAwAAAAAAAAEBAAACivwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAG
 ToolBarsMovable=Disabled
 Width 1600=1252
 Width 640=632
+eDP1 Height 900=688
+eDP1 Width 1600=1252
+eDP1 XPosition=174
+eDP1 YPosition=117
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly

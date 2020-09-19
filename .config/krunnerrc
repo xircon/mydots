@@ -1,5 +1,5 @@
 [General]
-history=plasmashell,common.css,config.org,b,albert,fire,konsole,tell,alac,ala,ya,vi,dolp
+history=reboot,plasmashell,common.css,config.org,b,albert,fire,konsole,tell,alac,ala,ya,vi,dolp
 
 [PlasmaRunnerManager]
-LaunchCounts=
+LaunchCounts=1 shell_reboot
