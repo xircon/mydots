@@ -1,2 +1,5 @@
 [General]
 history=plasmashell,common.css,config.org,b,albert,fire,konsole,tell,alac,ala,ya,vi,dolp
+
+[PlasmaRunnerManager]
+LaunchCounts=
