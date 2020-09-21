@@ -11,6 +11,9 @@ detailViewIconSize=0
 Height 900=586
 Width 1600=540
 
+[PlasmaRunnerManager]
+LaunchCounts=1 services_applications:firewall-config.desktop
+
 [PlasmaTransientsConfig]
 PreloadWeight=0
 

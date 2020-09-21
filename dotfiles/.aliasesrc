@@ -16,6 +16,9 @@ alias sse="sudo systemctl enable --now "
 alias sss="sudo systemctl start "
 alias ssd="sudo systemctl disable "
 alias ssu="systemctl enable --user "
+alias status="sudo systemctl status "
+alias enable="sudo systemctl enable "
+alias start="sudo systemctl start "
 
 #Desktops:
 alias d1="qdbus org.kde.KWin /KWin setCurrentDesktop 1"
@@ -359,7 +362,6 @@ alias ob="cd ~/.config/openbox && e autostart"
 
 #kernel
 alias modload="sudo /usr/lib/systemd/systemd-modules-load"
-alias status="sudo systemctl status "
 alias restart="sudo systemctl restart "
 #Screen
 alias scr="xrandr --size 1600x900"
@@ -652,7 +654,7 @@ alias inxi="inxi -Fxxxaz -c0 --no-host"
 alias inxic="inxi -Fxxxz"
 ## Docker
 alias stop="sudo docker stop emacs"
-alias start="xhost +si:localuser:steve && sudo docker start emacs"
+#alias start="xhost +si:localuser:steve && sudo docker start emacs"
 
 alias az+="killall running.bin || true && wg-quick up azirevpn-uk1 || true && running.bin &> /dev/null&"
 alias az-="killall running.bin || true && wg-quick down azirevpn-uk1 || true && running.bin &> /dev/null&"
