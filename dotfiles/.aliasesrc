@@ -30,6 +30,7 @@ alias d4="qdbus org.kde.KWin /KWin setCurrentDesktop 4"
 alias acfg="e ~/.config/alacritty/alacritty.yml"
 alias op1="sed -i '/background_opacity:.*/c\background_opacity: 1.0' ~/.config/alacritty/alacritty.yml && touch ~/.config/alacritty/alacritty.yml"
 alias op75="sed -i '/background_opacity:.*/c\background_opacity: 0.75' ~/.config/alacritty/alacritty.yml && touch ~/.config/alacritty/alacritty.yml"
+alias aw="awman "
 
 opp() {
  str="/background_opacity:.*/c\background_opacity:"
