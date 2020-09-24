@@ -3,17 +3,22 @@ FullScreen=false
 
 [MainWindow]
 Height 900=874
-State=AAAA/wAAAAD9AAAAAAAABkAAAAMMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAFHP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAABkAAAAMMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAFOf////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 Width 1600=1600
 Window-Maximized 900x1600=true
+eDP1 Window-Maximized 900x1600=true
+eDP1 XPosition=0
+eDP1 YPosition=26
 
 [Recent Files]
 File1[$e]=$HOME/test.org
 File2[$e]=$HOME/Downloads/Work/July meeting/UOS-training.pdf
 File3[$e]=$HOME/Documents/steve.md
 File4[$e]=$HOME/Downloads/torrent/Programming in Lua - 4th Edition/Programming in Lua - 4th Edition.pdf
+File5[$e]=$HOME/Downloads/torrent/Packt.Android.Programming.With.Kotlin.For.Beginners.2019.RETAiL.ePub.eBook-LiBRiCiDE/lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
 Name1[$e]=test.org
 Name2[$e]=UOS-training.pdf
 Name3[$e]=steve.md
 Name4[$e]=Programming in Lua - 4th Edition.pdf
+Name5[$e]=lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
