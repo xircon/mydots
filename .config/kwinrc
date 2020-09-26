@@ -4,7 +4,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 [Compositing]
 GLCore=true
 GLTextureFilter=0
-OpenGLIsUnsafe=false
+OpenGLIsUnsafe=true
 
 [Desktops]
 Id_1=1e468f94-e832-4e68-975a-5a34222c3a84
