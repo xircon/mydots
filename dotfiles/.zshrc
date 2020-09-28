@@ -6,6 +6,7 @@ stty -ixoff
 
 ttyctl -f
 
+#pfetch
 
 setopt noflowcontrol
 

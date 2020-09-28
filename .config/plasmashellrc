@@ -19,7 +19,7 @@ PreloadWeight=0
 
 [PlasmaViews][Panel 2]
 alignment=2
-panelVisibility=2
+panelVisibility=1
 
 [PlasmaViews][Panel 2][Defaults]
 minLength=468
