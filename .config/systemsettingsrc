@@ -1,6 +1,8 @@
 [DownloadDialog Settings]
 Height 900=514
 Width 1600=700
+eDP1 Height 900=550
+eDP1 Width 1600=700
 
 [KFileDialog Settings]
 Recent Files[$e]=screenlock.sh,file:$HOME/Pictures/ap.jpg,file:$HOME/scripts/screenlock.sh
