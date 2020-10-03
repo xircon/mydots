@@ -12,6 +12,9 @@ State=AAAA/wAAAAD9AAAAAAAABkAAAAMNAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 ToolBarsMovable=Disabled
 Width 1600=801
 Window-Maximized 900x1600=true
+eDP1 Window-Maximized 900x1600=true
+eDP1 XPosition=0
+eDP1 YPosition=26
 
 [Recent Files]
 File1[$e]=$HOME/Documents/Documents/Films_files/a114d534115636600b6a89574844adfb.jpeg
