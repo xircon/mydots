@@ -290,6 +290,7 @@ alias sc="cd ~/scripts"
 alias .em="cd ~/.emacs.d"
 alias memw='while true; do echo -n "`date +%H:%M:%S` " ;psmem  | grep -i  "emacs-"; sleep 10; done'
 alias emmm='while true; do echo -n "`date +%H:%M:%S` " ;psmem  | grep -i  "emacs-"; sleep 10; done'
+alias nmacs="emacs -q -l nano.el "
 alias pkgs="cd /var/cache/pacman/pkg/"
 alias calendar=' vim -c "Calendar"'
 
