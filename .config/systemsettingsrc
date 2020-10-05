@@ -5,8 +5,8 @@ eDP1 Height 900=550
 eDP1 Width 1600=700
 
 [KFileDialog Settings]
-Recent Files[$e]=screenlock.sh,file:$HOME/Pictures/ap.jpg,file:$HOME/scripts/screenlock.sh
-Recent URLs[$e]=file:$HOME/Pictures/
+Recent Files[$e]=screenlock.sh,file:$HOME/dotfiles/opengl-start.sh,file:$HOME/Pictures/ap.jpg,file:$HOME/scripts/screenlock.sh
+Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/dotfiles/
 detailViewIconSize=0
 
 [MainWindow]
@@ -15,10 +15,9 @@ MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAABkAAAANqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1600=1024
-eDP1 Height 900=870
-eDP1 Width 1600=1024
-eDP1 Window-Maximized 900x1600=true
-eDP1 XPosition=0
+eDP1 Height 900=700
+eDP1 Width 1600=1058
+eDP1 XPosition=4
 eDP1 YPosition=26
 
 [Open-with settings]

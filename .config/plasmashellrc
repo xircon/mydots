@@ -12,7 +12,7 @@ Height 900=586
 Width 1600=540
 
 [PlasmaRunnerManager]
-LaunchCounts=2 services_applications:firewall-config.desktop
+LaunchCounts=2 services_applications:user_manager.desktop,2 services_applications:firewall-config.desktop
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
