@@ -7,18 +7,20 @@ Recent URLs[$e]=file:$HOME/Downloads/torrent/
 detailViewIconSize=0
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAGDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAxkAAAMpAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 StatusBar=Disabled
 ToolBarsMovable=Disabled
-splitterSizes=424,212
+eDP1 Height 900=890
+eDP1 Width 1600=793
+eDP1 XPosition=803
+eDP1 YPosition=5
+splitterSizes=526,263
 
 [Recent Files]
 File1[$e]=$HOME/.emacs.d/FiraCode-Regular-Symbol.zip
-File2[$e]=$HOME/Downloads/Stockfish-NNUE.7z
-File3[$e]=$HOME/Downloads/torrent/Grim.Dawn.v1.0.1.0.Incl.DLC.GOG.zip
+File2[$e]=$HOME/Downloads/simple-flat-white.tar.gz
 Name1[$e]=FiraCode-Regular-Symbol.zip
-Name2[$e]=Stockfish-NNUE.7z
-Name3[$e]=Grim.Dawn.v1.0.1.0.Incl.DLC.GOG.zip
+Name2[$e]=simple-flat-white.tar.gz
 
 [Viewer]
 Height 900=338

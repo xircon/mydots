@@ -3,13 +3,13 @@ FullScreen=false
 
 [MainWindow]
 Height 900=874
-State=AAAA/wAAAAD9AAAAAAAABkAAAAMMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAE4v////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAAAxkAAAMpAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAC1P////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 Width 1600=1600
 Window-Maximized 900x1600=true
 eDP1 Window-Maximized 900x1600=true
-eDP1 XPosition=0
-eDP1 YPosition=26
+eDP1 XPosition=803
+eDP1 YPosition=5
 
 [Recent Files]
 File1[$e]=$HOME/test.org
@@ -17,10 +17,10 @@ File2[$e]=$HOME/Downloads/Work/July meeting/UOS-training.pdf
 File3[$e]=$HOME/Documents/steve.md
 File4[$e]=$HOME/Downloads/torrent/Programming in Lua - 4th Edition/Programming in Lua - 4th Edition.pdf
 File5[$e]=$HOME/Downloads/torrent/Packt.Android.Programming.With.Kotlin.For.Beginners.2019.RETAiL.ePub.eBook-LiBRiCiDE/lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
-File6[$e]=$HOME/Downloads/PHE_Complete_Immunisation_Schedule_Jun2020_05.pdf
+File6[$e]=$HOME/Downloads/SCC_COMUNICADOS_PI_Batch01001511173cc71573773800.pdf
 Name1[$e]=test.org
 Name2[$e]=UOS-training.pdf
 Name3[$e]=steve.md
 Name4[$e]=Programming in Lua - 4th Edition.pdf
 Name5[$e]=lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
-Name6[$e]=PHE_Complete_Immunisation_Schedule_Jun2020_05.pdf
+Name6[$e]=SCC_COMUNICADOS_PI_Batch01001511173cc71573773800.pdf

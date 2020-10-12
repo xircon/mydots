@@ -23,7 +23,7 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
+_k_friendly_name=KDE Daemon
 {20f2252f-98e5-43b6-ae6b-809564fdb52c}=none,none,test
 {3a0ccd2c-cd2f-4420-9afd-d024dd8c020f}=Meta+Num++,none,bopp
 {4ff16a82-8f6c-4fc0-9a54-62848153593e}=Meta+W,none,Firefox
