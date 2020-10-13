@@ -130,6 +130,7 @@ Theme=Hey-blue-dark
 [KDE]
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
 SingleClick=false
 contrast=4
 widgetStyle=kvantum-dark

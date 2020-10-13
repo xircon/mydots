@@ -1,3 +1,9 @@
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACsAAADXvwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAcAAADXgAAAFQA////AAAAAQAAALgAAAH0/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAAAAAH0AAAAAgD///8AAAADAAAD5gAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAABCAAAD5gAAAAIA////AAACJwAAA14AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAwAAAAD/////AAAAAAAAAAA=
+eDP1 Height 900=890
+eDP1 Width 1600=793
+eDP1 XPosition=803
+eDP1 YPosition=5
+
 [CompactMode]
 FontWeight=50
 
@@ -18,6 +24,7 @@ ViewPropsTimestamp=2020,7,27,21,50,20
 FontSize=11
 FontWeight=50
 IconSize=64
+MaximumTextLines=3
 PreviewSize=80
 UseSystemFont=false
 
@@ -29,14 +36,14 @@ Width 1600=478
 Height 480=450
 Height 900=688
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAwAAAAAAAACsAAADZPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAcAAADZAAAAFQA////AAAAAQAAALgAAAH0/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAAAAAH0AAAAAgD///8AAAADAAAD5gAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAABCAAAD5gAAAAIA////AAAFTAAAA2QAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAwAAAAD/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAwAAAAAAAACsAAADXvwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAcAAADXgAAAFQA////AAAAAQAAALgAAAH0/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAAAAAH0AAAAAgD///8AAAADAAAD5gAAALb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAABCAAAD5gAAAAIA////AAACJwAAA14AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAwAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 Width 1600=1252
 Width 640=632
-eDP1 Height 900=896
-eDP1 Width 1600=1598
-eDP1 XPosition=1
-eDP1 YPosition=2
+eDP1 Height 900=890
+eDP1 Width 1600=793
+eDP1 XPosition=803
+eDP1 YPosition=5
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
@@ -44,6 +51,9 @@ ToolButtonStyle=IconOnly
 [Open-with settings]
 CompletionMode=1
 History=ark,feat,mpv
+
+[PlacesPanel]
+IconSize=22
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
@@ -53,6 +63,9 @@ Height 900=626
 Width 1600=753
 eDP1 Height 900=496
 eDP1 Width 1600=618
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
 
 [ViewPropertiesDialog]
 Height 900=403
