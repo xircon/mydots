@@ -21,18 +21,18 @@ File1[$e]=$HOME/Documents/Documents/Films_files/a114d534115636600b6a89574844adfb
 File2[$e]=$HOME/Documents/Documents/Films_files/2fb81192cd10fea4af3139c41cdb2b3a.jpeg
 File3[$e]=$HOME/Documents/Documents/Films_files/32d2e205713a5b1634e02e30129fea48.jpeg
 File4[$e]=$HOME/Documents/Documents/Films_files/fda4d585137629623c3602267536438c.jpeg
-File5[$e]=$HOME/Downloads/flog.gif
-File6[$e]=trash:/0-1 (13).jpg
-File7[$e]=trash:/0-2-4.jpg
-File8[$e]=$HOME/Downloads/Screenshot_20201003_094632_name.pilgr.appdialer.pro.jpg
+File5[$e]=trash:/0-1 (13).jpg
+File6[$e]=trash:/0-2-4.jpg
+File7[$e]=$HOME/Pictures/ap.jpg
+File8[$e]=$HOME/maple.jpg
 Name1[$e]=a114d534115636600b6a89574844adfb.jpeg
 Name2[$e]=2fb81192cd10fea4af3139c41cdb2b3a.jpeg
 Name3[$e]=32d2e205713a5b1634e02e30129fea48.jpeg
 Name4[$e]=fda4d585137629623c3602267536438c.jpeg
-Name5[$e]=flog.gif
-Name6[$e]=0-1 (13).jpg
-Name7[$e]=0-2-4.jpg
-Name8[$e]=Screenshot_20201003_094632_name.pilgr.appdialer.pro.jpg
+Name5[$e]=0-1 (13).jpg
+Name6[$e]=0-2-4.jpg
+Name7[$e]=ap.jpg
+Name8[$e]=maple.jpg
 
 [SideBar]
 SideBarSplitterSizes=179,1415
