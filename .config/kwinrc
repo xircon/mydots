@@ -3,7 +3,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 
 [Compositing]
 GLCore=true
-GLTextureFilter=0
+GLTextureFilter=1
 OpenGLIsUnsafe=false
 
 [Desktops]
@@ -13,6 +13,9 @@ Id_3=9f58fdc0-eec0-4275-b839-1b5df406647c
 Id_4=74aa99e4-7201-4cb7-bf7e-64b8b8eeeecb
 Number=4
 Rows=1
+
+[DrmOutputs][2386fc4081][2386fc4081]
+Scale=1
 
 [Effect-Cube]
 BorderActivate=1
