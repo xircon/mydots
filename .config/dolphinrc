@@ -31,6 +31,8 @@ UseSystemFont=false
 [KPropertiesDialog]
 Height 900=586
 Width 1600=478
+eDP1 Height 900=657
+eDP1 Width 1600=638
 
 [MainWindow]
 Height 480=450
