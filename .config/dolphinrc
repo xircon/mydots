@@ -45,7 +45,7 @@ Width 640=632
 eDP1 Height 900=602
 eDP1 Width 1600=1010
 eDP1 XPosition=295
-eDP1 YPosition=160
+eDP1 YPosition=164
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
