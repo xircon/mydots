@@ -3,7 +3,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 
 [Compositing]
 GLCore=true
-GLTextureFilter=0
+GLTextureFilter=1
 OpenGLIsUnsafe=false
 
 [Desktops]
@@ -34,9 +34,12 @@ Y=12
 TopLeft=None
 
 [Plugins]
+blurEnabled=true
+contrastEnabled=true
 coverswitchEnabled=true
 cubeEnabled=true
 cubeslideEnabled=true
+diminactiveEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
 kwin4_effect_minimizescaleEnabled=true
@@ -59,5 +62,7 @@ FocusPolicy=FocusFollowsMouse
 Placement=Centered
 
 [org.kde.kdecoration2]
+ButtonsOnLeft=MFS
+ButtonsOnRight=IAX
 library=org.kde.hello
 theme=hello

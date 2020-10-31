@@ -19,6 +19,19 @@ alias ssu="systemctl enable --user "
 alias status="sudo systemctl status "
 alias enable="sudo systemctl enable "
 alias start="sudo systemctl start "
+alias stop="sudo systemctl stop "
+
+#Simplepush / Ntfy
+#
+# alias spush="curl --data 'key=H3y8a6&title=$1&msg=$2' https://api.simplepush.io/send" # 
+
+function spush() {
+    cmd="curl --data 'key=H3y8a6&title=$1&msg=$2' https://api.simplepush.io/send"
+    echo $cmd
+    eval $cmd
+}
+
+alias ports="sudo lsof -i -P -n | grep LISTEN"
 
 #Desktops:
 alias d1="qdbus org.kde.KWin /KWin setCurrentDesktop 1"
@@ -655,7 +668,6 @@ alias inxif="inxi --full -v 8"
 alias inxi="inxi -Fxxxaz -c0 --no-host"
 alias inxic="inxi -Fxxxz"
 ## Docker
-alias stop="sudo docker stop emacs"
 #alias start="xhost +si:localuser:steve && sudo docker start emacs"
 
 alias az+="killall running.bin || true && wg-quick up azirevpn-uk1 || true && running.bin &> /dev/null&"

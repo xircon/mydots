@@ -3,12 +3,15 @@ ShadowSize=ShadowNone
 ShadowStrength=219
 
 [Windeco]
+BorderRadiusSpin=11
 ButtonCustomColor=false
-ButtonSizeSpin=17
+ButtonSizeSpin=15
 CustomCloseColor=255,0,0
 CustomColorBox=true
-CustomColorSelect=0,85,127
+CustomColorSelect=85,85,127
 CustomMaxColor=0,85,255
 CustomMinColor=255,170,0
 CustomShadeColor=255,0,255
+DrawBackgroundGradient=false
+DrawHighlight=true
 DrawTitleBarSeparator=true

@@ -17,8 +17,8 @@ ToolBarsMovable=Disabled
 Width 1600=1024
 eDP1 Height 900=700
 eDP1 Width 1600=1058
-eDP1 XPosition=271
-eDP1 YPosition=115
+eDP1 XPosition=268
+eDP1 YPosition=81
 
 [Open-with settings]
 CompletionMode=1

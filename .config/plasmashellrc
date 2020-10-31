@@ -3,16 +3,18 @@ Height 900=550
 Width 1600=700
 
 [KFileDialog Settings]
-Recent Files[$e]=bamboo.jpg,file:$HOME/Downloads/Pictures/space-shuttle-icon-340529.png,file:$HOME/wallpaper/bamboo.jpg
-Recent URLs[$e]=file:$HOME/Downloads/Pictures/,file:$HOME/Downloads/
+Recent Files[$e]=bamboo.jpg,file:///usr/bin/zbstudio,file:$HOME/Downloads/Pictures/space-shuttle-icon-340529.png,file:$HOME/wallpaper/bamboo.jpg
+Recent URLs[$e]=file:$HOME/Downloads/Pictures/,file:$HOME/Downloads/,file:///usr/bin/
 detailViewIconSize=0
 
 [KPropertiesDialog]
 Height 900=586
 Width 1600=540
+eDP1 Height 900=567
+eDP1 Width 1600=540
 
 [PlasmaRunnerManager]
-LaunchCounts=2 services_applications:user_manager.desktop,2 services_applications:firewall-config.desktop,1 services_applications:org.manjaro.pamac.manager.desktop
+LaunchCounts=7 services_applications:zbstudio.desktop,2 services_applications:user_manager.desktop,2 services_applications:firewall-config.desktop,1 services_applications:org.manjaro.pamac.manager.desktop
 
 [PlasmaTransientsConfig]
 PreloadWeight=0

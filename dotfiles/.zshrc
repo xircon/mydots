@@ -10,6 +10,8 @@ ttyctl -f
 
 setopt noflowcontrol
 
+#eval "$(ntfy shell-integration)"
+
 OPENER=mimeo
 VISUAL=micro
 export "VISUAL_EDITOR"=micro
