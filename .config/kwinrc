@@ -3,7 +3,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 
 [Compositing]
 GLCore=true
-GLTextureFilter=1
+GLTextureFilter=0
 OpenGLIsUnsafe=false
 
 [Desktops]
@@ -39,13 +39,13 @@ contrastEnabled=true
 coverswitchEnabled=true
 cubeEnabled=true
 cubeslideEnabled=true
-diminactiveEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
 kwin4_effect_minimizescaleEnabled=true
 kwin4_effect_squashEnabled=false
 kwin_osdclockEnabled=true
 slideEnabled=false
+slidebackEnabled=true
 thumbnailasideEnabled=true
 wobblywindowsEnabled=true
 

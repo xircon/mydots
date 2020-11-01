@@ -122,7 +122,7 @@ font=Noto Sans,13,-1,5,50,0,0,0,0,0
 menuFont=Noto Sans,13,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=Noto Sans,11,-1,5,50,0,0,0,0,0
-toolBarFont=OpenDyslexic,13,-1,5,50,0,0,0,0,0
+toolBarFont=Noto Sans,11,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
