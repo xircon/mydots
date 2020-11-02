@@ -85,14 +85,14 @@ done=ksmserver_update_loginMode_value_default_enum
 mtime=1603810678
 
 [kwin.upd]
-ctime=1603822147
+ctime=1604256033
 done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed
-mtime=1603808903
+mtime=1603653150
 
 [kwinrules.upd]
-ctime=1603822147
+ctime=1604256033
 done=replace-placement-string-to-enum
-mtime=1603808903
+mtime=1603653150
 
 [okular.upd]
 ctime=1602608157

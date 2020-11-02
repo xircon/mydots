@@ -14,7 +14,7 @@ eDP1 Height 900=567
 eDP1 Width 1600=540
 
 [PlasmaRunnerManager]
-LaunchCounts=8 services_applications:zbstudio.desktop,2 services_applications:user_manager.desktop,2 services_applications:firewall-config.desktop,1 services_applications:org.manjaro.pamac.manager.desktop
+LaunchCounts=2 services_applications:user_manager.desktop,2 services_applications:firewall-config.desktop,1 services_applications:org.manjaro.pamac.manager.desktop,8 services_applications:zbstudio.desktop,1 services_applications:qomui.desktop
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
