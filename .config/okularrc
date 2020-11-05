@@ -8,7 +8,8 @@ State=AAAA/wAAAAD9AAAAAAAABkAAAAMHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG
 ToolBarsMovable=Disabled
 Width 1600=1600
 Window-Maximized 900x1600=true
-eDP1 Window-Maximized 900x1600=true
+eDP1 Height 900=869
+eDP1 Width 1600=1600
 eDP1 XPosition=0
 eDP1 YPosition=31
 

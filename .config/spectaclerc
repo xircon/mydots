@@ -3,6 +3,7 @@ update_info=spectacle_newConfig.upd:spectacle-new-config
 
 [GuiConfig]
 captureDelay=15
-captureMode=2
+captureMode=5
+cropRegion=688,339,722,415
 onClickChecked=true
-window-position=249,0
+window-position=243,0
