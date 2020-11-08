@@ -3,13 +3,13 @@ FullScreen=false
 
 [MainWindow]
 Height 900=874
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABkAAAAMHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAEuf////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAABkAAAAMHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIBAAAE//////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 Width 1600=1600
 Window-Maximized 900x1600=true
 eDP1 Height 900=869
 eDP1 Width 1600=1600
+eDP1 Window-Maximized 900x1600=true
 eDP1 XPosition=0
 eDP1 YPosition=31
 
@@ -17,12 +17,10 @@ eDP1 YPosition=31
 File1[$e]=$HOME/test.org
 File2[$e]=$HOME/Downloads/Work/July meeting/UOS-training.pdf
 File3[$e]=$HOME/Documents/steve.md
-File4[$e]=$HOME/Downloads/torrent/Programming in Lua - 4th Edition/Programming in Lua - 4th Edition.pdf
-File5[$e]=$HOME/Downloads/torrent/Packt.Android.Programming.With.Kotlin.For.Beginners.2019.RETAiL.ePub.eBook-LiBRiCiDE/lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
-File6[$e]=$HOME/Downloads/SCC_COMUNICADOS_PI_Batch01001511173cc71573773800.pdf
+File4[$e]=$HOME/Downloads/torrent/Creative Projects for Rust Programmers Build exciting projects on domains such as web apps WebAssembly games and parsing/9781789346220-CREATIVE_PROJECTS_FOR_RUST_PROGRAMMERS.pdf
+File5[$e]=$HOME/Downloads/torrent/Programming Rust 1st Edition - Jim Blandy Jason Orendorff 1491927283 shailab/Programming Rust 1st Edition 1491927283.pdf
 Name1[$e]=test.org
 Name2[$e]=UOS-training.pdf
 Name3[$e]=steve.md
-Name4[$e]=Programming in Lua - 4th Edition.pdf
-Name5[$e]=lc-packt.android.programming.with.kotlin.for.beginners.2019.epub
-Name6[$e]=SCC_COMUNICADOS_PI_Batch01001511173cc71573773800.pdf
+Name4[$e]=9781789346220-CREATIVE_PROJECTS_FOR_RUST_PROGRAMMERS.pdf
+Name5[$e]=Programming Rust 1st Edition 1491927283.pdf

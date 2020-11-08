@@ -401,25 +401,41 @@ alias mm="micro "
 ## emacs function:
 e(){
     sudo="/sudo::"
-    
-    if [[ ${1:0:1} == "/" ]] ; then
-        str=$sudo$1
-    else
-        str=$1
+
+    fn=$1
+
+    # If no path given add a pwd path to filename:
+    if [[ ${1:0:1} != "/" ]] ; then
+        fn="$(pwd)/$1"
     fi
 
+    # But if blank, stay blank:
+    if [[ ${1:0:1} == "" ]] ; then
+        fn=""
+    fi
+
+    # If file name starts with a / then add sudo:
+    if [[ ${fn:0:1} == "/" ]] ; then
+        fn=$sudo$fn
+    fi
+
+    # But if it starts with /home, sudo not needed: 
     if [[ ${1:0:5} == "/home" ]] ; then
-    	str=$1
+    	fn=$1
     fi
 
-    if [ "$1" = "" ]; then
-       #Open my notes file:
+    # Or if it starts with ~/, also not needed:
+    if [[ ${1:0:2} == "~/" ]] ; then
+    	fn=$1
+    fi
+    
+    if [ "$fn" = "" ]; then
+       # Open my notes file if no name given:
        emacsclient -c ~/.t.org &
     else
-       #Open file from command line:
-       emacsclient -c $str &
+       # Open modified filename from command line:
+       emacsclient -c $fn &
     fi
-    echo "Opening: "$str
 }
 
 alias et= "emacs ~/dotfiles/emacs.d/config-term.org"
