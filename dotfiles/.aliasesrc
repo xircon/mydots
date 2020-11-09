@@ -373,7 +373,7 @@ alias a2="gcalcli calw 2"
 alias a1="gcalcli calw 1"
 
 #openbox
-alias ob="cd ~/.config/openbox && e autostart"
+alias ob="cd ~/.config/openbox && micro  autostart"
 
 #kernel
 alias modload="sudo /usr/lib/systemd/systemd-modules-load"

@@ -1,5 +1,5 @@
 [General]
-history=reboot,plasmashell,common.css,config.org,b,albert,fire,konsole,tell,alac,ala,ya,vi,dolp
+history=alac,reboot,plasmashell,common.css,config.org,b,albert,fire,konsole,tell,ala,ya,vi,dolp
 
 [PlasmaRunnerManager]
-LaunchCounts=1 shell_plasmashell,2 shell_reboot
+LaunchCounts=2 shell_reboot,1 services_applications:Alacritty.desktop,1 shell_plasmashell
