@@ -54,8 +54,8 @@ hyper+w
 super+w
 	~/scripts/browser.sh
 	
-alt+f
-	~/scripts/browser.sh 
+hyper+f
+	~/scripts/firefox.sh 
 
 alt+n
   variety -n

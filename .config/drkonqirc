@@ -1,8 +1,8 @@
 [General]
 Height 900=443
 Width 1600=787
-eDP1 Height 900=436
-eDP1 Width 1600=775
+eDP1 Height 900=353
+eDP1 Width 1600=627
 
 [SystemInformation]
 CompiledSources=false
