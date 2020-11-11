@@ -14,7 +14,7 @@ eDP1 Height 900=567
 eDP1 Width 1600=564
 
 [PlasmaRunnerManager]
-LaunchCounts=2 services_applications:user_manager.desktop,8 services_applications:zbstudio.desktop,1 services_applications:Half-Life Opposing Force.desktop,1 services_applications:qomui.desktop,1 services_applications:realvnc-vncviewer.desktop,2 services_applications:firewall-config.desktop,1 services_applications:vncviewer.desktop,1 services_applications:org.manjaro.pamac.manager.desktop
+LaunchCounts=1 services_applications:org.manjaro.pamac.manager.desktop,1 services_applications:bluetooth.desktop,1 services_applications:vncviewer.desktop,1 services_applications:Half-Life Opposing Force.desktop,1 services_applications:realvnc-vncviewer.desktop,1 services_applications:qomui.desktop,8 services_applications:zbstudio.desktop,2 services_applications:firewall-config.desktop,2 services_applications:user_manager.desktop
 
 [PlasmaTransientsConfig]
 PreloadWeight=0
